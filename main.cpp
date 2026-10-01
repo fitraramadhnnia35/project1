@@ -14,6 +14,6 @@ string nama;
   cout<<nama <<endl;
   cout<<"sekolahmu di   ";
   cout<<sekolah;
-    system("pause")
+    system("pause");
     return 0;
 }
