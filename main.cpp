@@ -6,14 +6,20 @@ using namespace std;
 int main() {
 string nama;
     string sekolah;
+    string ulang;
+    do{
     cout<<"masukkan nama "<<endl;
     cin>>nama;
-    cout<<"masukkan nama sekolahmu   ";
+    cout<<"masukkan nama sekolahmu   "<<endl;
     cin>>sekolah;
   cout<<"namamu adalah   ";
   cout<<nama <<endl;
   cout<<"sekolahmu di   ";
-  cout<<sekolah;
-    system("pause");
+  cout<<sekolah <<endl;
+        cout<<"apakah anda mau mengulang, tekan y atau Y "<<endl;
+        cin>>ulang;
+    }
+        while (ulang=="y"||ulang=="Y");
+        system("pause");
     return 0;
 }
