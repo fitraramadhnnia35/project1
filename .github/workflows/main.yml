@@ -8,13 +8,14 @@ jobs:
     runs-on: windows-latest
 
     steps:
-    - uses: actions/checkout@v4
+      - name: Ambil kode
+        uses: actions/checkout@v4
 
-    - name: Compile C++
-      run: g++ main.cpp -o program.exe
+      - name: Compile C++
+        run: g++ program.cpp -o program.exe -static -static-libgcc -static-libstdc++
 
-    - name: Upload EXE
-      uses: actions/upload-artifact@v4
-      with:
-        name: program-exe
-        path: program.exe
+      - name: Upload EXE
+        uses: actions/upload-artifact@v4
+        with:
+          name: program-exe
+          path: program.exe
